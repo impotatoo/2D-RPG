@@ -120,8 +120,7 @@ public class SkillUI : MonoBehaviour
     {
         if (skillPointText != null)
         {
-            // skillPointText.text = "Player SkillPoint:\t"+statPoint.ToString("F0");
-            skillPointText.text = "성장 포인트:\t"+statPoint.ToString("F0");
+            skillPointText.text = "Player SkillPoint:\t"+statPoint.ToString("F0");
         }
     }
 
@@ -136,8 +135,7 @@ public class SkillUI : MonoBehaviour
     {
         foreach (Skill skill in skillList)
         {
-            // if (skill.skillName == "Dash")
-            if (skill.skillName == "능공허도")
+            if (skill.skillName == "Dash")
             {
                 if (skill.level == 0)
                 {
@@ -150,8 +148,7 @@ public class SkillUI : MonoBehaviour
                     DashArea.SetActive(true);
                 }
             }
-            // else if (skill.skillName == "Heal")
-            else if (skill.skillName == "운기조식")
+            else if (skill.skillName == "Heal")
             {
                 if (skill.level == 0)
                 {
@@ -164,8 +161,7 @@ public class SkillUI : MonoBehaviour
                     HealArea.SetActive(true);
                 }
             }
-            // else if (skill.skillName == "Ultimate")
-            else if (skill.skillName == "성명절기")
+            else if (skill.skillName == "Ultimate")
             {
                 if (skill.level == 0)
                 {

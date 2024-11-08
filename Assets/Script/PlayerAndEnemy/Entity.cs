@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Entity : MonoBehaviourPunCallbacks
 {
     protected Animator anim;
-    public Rigidbody2D rb;
+    protected Rigidbody2D rb;
     public float lerpTime = 5f;
 
     [Header("Collision info")]
@@ -19,7 +19,7 @@ public class Entity : MonoBehaviourPunCallbacks
     [SerializeField] protected float wallCheckDistance;
     [SerializeField] protected LayerMask whatIsGround;
 
-    public bool isGrounded;
+    protected bool isGrounded;
     protected bool isWallDetected;
 
     [Header("Attack")]

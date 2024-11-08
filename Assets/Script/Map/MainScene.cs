@@ -73,7 +73,7 @@ public class MainScene : MonoBehaviourPunCallbacks
         MainPanel.SetActive(true);
     }
 
-    public void OnRoomButtonClicked()
+    private void OnRoomButtonClicked()
     {
         string nickName = NickNameInput.text;
         PhotonNetwork.NickName = nickName;
